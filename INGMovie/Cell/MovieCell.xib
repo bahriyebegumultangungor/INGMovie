@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCell" id="gTV-IL-0wX" customClass="MovieCell">
+            <rect key="frame" x="0.0" y="0.0" width="192" height="325"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="192" height="325"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BMd-wL-HaJ">
+                        <rect key="frame" x="2" y="2" width="188" height="321"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXo-nE-JQg">
+                        <rect key="frame" x="2" y="298" width="188" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NW-WY-b22">
+                                <rect key="frame" x="0.0" y="4" width="188" height="17"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7NW-WY-b22" firstAttribute="centerY" secondItem="YXo-nE-JQg" secondAttribute="centerY" id="B7j-rh-bj8"/>
+                            <constraint firstAttribute="height" secondItem="7NW-WY-b22" secondAttribute="height" multiplier="1.46341" id="Pya-x8-ue6"/>
+                            <constraint firstAttribute="trailing" secondItem="7NW-WY-b22" secondAttribute="trailing" id="bTA-o6-Prb"/>
+                            <constraint firstItem="7NW-WY-b22" firstAttribute="centerX" secondItem="YXo-nE-JQg" secondAttribute="centerX" id="cKC-ir-Zao"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WK7-VZ-zT0">
+                        <rect key="frame" x="151" y="5" width="36" height="36"/>
+                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="7wy-ZG-TcE"/>
+                            <constraint firstAttribute="width" constant="36" id="FUW-VE-KzV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                        <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="WK7-VZ-zT0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="14M-Dh-eB2"/>
+                <constraint firstItem="BMd-wL-HaJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="2PW-dQ-xXa"/>
+                <constraint firstAttribute="bottom" secondItem="YXo-nE-JQg" secondAttribute="bottom" constant="2" id="DaB-u2-EOj"/>
+                <constraint firstItem="YXo-nE-JQg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="DzR-Ru-8sp"/>
+                <constraint firstItem="YXo-nE-JQg" firstAttribute="centerX" secondItem="BMd-wL-HaJ" secondAttribute="centerX" id="FbY-Wd-CHp"/>
+                <constraint firstAttribute="trailing" secondItem="BMd-wL-HaJ" secondAttribute="trailing" constant="2" id="Lmb-ef-B4t"/>
+                <constraint firstItem="YXo-nE-JQg" firstAttribute="centerX" secondItem="SEy-5g-ep8" secondAttribute="centerX" id="UUc-JI-DNT"/>
+                <constraint firstAttribute="trailing" secondItem="WK7-VZ-zT0" secondAttribute="trailing" constant="5" id="YjW-a2-mEr"/>
+                <constraint firstAttribute="bottom" secondItem="BMd-wL-HaJ" secondAttribute="bottom" constant="2" id="fgd-9G-A9F"/>
+                <constraint firstItem="BMd-wL-HaJ" firstAttribute="centerX" secondItem="SEy-5g-ep8" secondAttribute="centerX" id="gPh-Vw-fjN"/>
+                <constraint firstAttribute="trailing" secondItem="YXo-nE-JQg" secondAttribute="trailing" constant="2" id="syZ-NO-Pxf"/>
+                <constraint firstItem="BMd-wL-HaJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="xgh-5a-pnV"/>
+                <constraint firstItem="BMd-wL-HaJ" firstAttribute="centerX" secondItem="SEy-5g-ep8" secondAttribute="centerX" id="zpn-KS-6Xl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="192" height="325"/>
+            <connections>
+                <outlet property="favLabel" destination="WK7-VZ-zT0" id="prd-Wc-BzK"/>
+                <outlet property="movieImage" destination="BMd-wL-HaJ" id="WaD-8y-2Bk"/>
+                <outlet property="movieTitle" destination="7NW-WY-b22" id="yKs-GS-ILF"/>
+            </connections>
+            <point key="canvasLocation" x="114.49275362318842" y="244.08482142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>
